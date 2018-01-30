@@ -5,10 +5,10 @@ gem "rails", "~> 5.1"
 
 gem "unicorn"
 
-gem "mysql2", ">= 0.3.14"
+# gem "mysql2", ">= 0.3.14"
 
 # uncomment to use PostgreSQL
-# gem "pg"
+gem "pg"
 
 gem "uglifier", ">= 1.3.0"
 gem "jquery-rails", "~> 4.3"
