@@ -80,3 +80,15 @@ end
 %w{render_template render_partial render_collection}.each do |event|
   ActiveSupport::Notifications.unsubscribe "#{event}.action_view"
 end
+
+class << Rails.application
+  def domain
+    "bitip.in"
+  end
+
+  def name
+    "Blockchain and Token News"
+  end
+end
+
+Rails.application.routes.default_url_options[:host] = Rails.application.domain
