@@ -8,7 +8,7 @@ gem "unicorn"
 # gem "mysql2", ">= 0.3.14"
 
 # uncomment to use PostgreSQL
-gem "pg"
+gem 'pg', '~> 0.18'
 
 gem "uglifier", ">= 1.3.0"
 gem "jquery-rails", "~> 4.3"

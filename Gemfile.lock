@@ -81,7 +81,7 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     oauth (0.5.3)
-    pg (1.0.0)
+    pg (0.21.0)
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -170,7 +170,7 @@ DEPENDENCIES
   mail
   nokogiri (>= 1.7.2)
   oauth
-  pg
+  pg (~> 0.18)
   rails (~> 5.1)
   rotp
   rqrcode
