@@ -77,11 +77,11 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.3.0)
     minitest (5.10.2)
-    mysql2 (0.4.6)
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     oauth (0.5.3)
+    pg (1.0.0)
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -168,9 +168,9 @@ DEPENDENCIES
   json
   machinist
   mail
-  mysql2 (>= 0.3.14)
   nokogiri (>= 1.7.2)
   oauth
+  pg
   rails (~> 5.1)
   rotp
   rqrcode
@@ -180,4 +180,4 @@ DEPENDENCIES
   unicorn
 
 BUNDLED WITH
-   1.15.4
+   1.16.1
