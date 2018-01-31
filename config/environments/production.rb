@@ -83,7 +83,7 @@ end
 
 class << Rails.application
   def domain
-    "bitip.in"
+    "glacial-oasis-87722.herokuapp.com"
   end
 
   def name
