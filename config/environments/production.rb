@@ -83,11 +83,11 @@ end
 
 class << Rails.application
   def domain
-    "glacial-oasis-87722.herokuapp.com"
+    "www.bitip.in"
   end
 
   def name
-    "Blockchain and Token News"
+    "币贴"
   end
 end
 
