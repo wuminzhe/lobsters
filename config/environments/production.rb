@@ -87,7 +87,7 @@ class << Rails.application
   end
 
   def name
-    "币贴"
+    "币帖"
   end
 end
 
