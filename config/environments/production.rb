@@ -59,19 +59,6 @@ Lobsters::Application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { host: 'bitip.in', protocol: 'https' }
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    port:           587,
-    domain:         "mail.otc.one",
-    address:        "smtp587.sendcloud.net",
-    user_name:      "rxsgjt8A1dr1U8yPiUYu5y4Idz0wotIw",
-    password:       "LPYH5mzQUNE40OVW",
-    authentication: "login",
-    enable_starttls_auto: true,
-    openssl_verify_mode: 'none'
-  }
 
   # config.action_mailer.delivery_method = :sendmail
   # # Defaults to:
