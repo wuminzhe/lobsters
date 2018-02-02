@@ -99,7 +99,7 @@ class << Rails.application
   end
 
   def name
-    "币帖"
+    "币帖 - Blockchain Hacker Articles"
   end
 end
 
