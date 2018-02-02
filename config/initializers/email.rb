@@ -5,6 +5,7 @@ ActionMailer::Base.smtp_settings = {
   :enable_starttls_auto => true,
   :user_name => ENV.fetch("SMTP_USERNAME", "rxsgjt8A1dr1U8yPiUYu5y4Idz0wotIw"),
   :password => ENV.fetch("SMTP_PASSWORD", "LPYH5mzQUNE40OVW"),
+  :openssl_verify_mode => 'none'
 }
 
 # config.action_mailer.delivery_method = :smtp
