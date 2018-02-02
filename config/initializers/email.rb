@@ -1,11 +1,12 @@
 ActionMailer::Base.smtp_settings = {
-  :address => ENV.fetch("SMTP_HOST", "smtp587.sendcloud.net"),
-  :port => Integer(ENV.fetch("SMTP_PORT", 587)),
-  :domain => 'mail.otc.one',
-  :enable_starttls_auto => true,
-  :user_name => ENV.fetch("SMTP_USERNAME", "rxsgjt8A1dr1U8yPiUYu5y4Idz0wotIw"),
-  :password => ENV.fetch("SMTP_PASSWORD", "LPYH5mzQUNE40OVW"),
-  :openssl_verify_mode => 'none'
+  :address                => ENV.fetch("SMTP_HOST", "smtp587.sendcloud.net"),
+  :port                   => Integer(ENV.fetch("SMTP_PORT", 587)),
+  :domain                 => 'mail.otc.one',
+  :enable_starttls_auto   => true,
+  :user_name              => ENV.fetch("SMTP_USERNAME", "rxsgjt8A1dr1U8yPiUYu5y4Idz0wotIw"),
+  :password               => ENV.fetch("SMTP_PASSWORD", "LPYH5mzQUNE40OVW"),
+  :authentication         => "login",
+  :openssl_verify_mode    => 'none'
 }
 
 # config.action_mailer.delivery_method = :smtp
