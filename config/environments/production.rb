@@ -60,6 +60,28 @@ Lobsters::Application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
 
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   port:           587,
+  #   domain:         "mail.otc.one",
+  #   address:        "smtp587.sendcloud.net",
+  #   user_name:      "rxsgjt8A1dr1U8yPiUYu5y4Idz0wotIw",
+  #   password:       "LPYH5mzQUNE40OVW",
+  #   authentication: "login",
+  #   enable_starttls_auto: true,
+  #   openssl_verify_mode: 'none'
+  # }
+
+  config.action_mailer.delivery_method = :sendmail
+  # Defaults to:
+  # config.action_mailer.sendmail_settings = {
+  #   location: '/usr/sbin/sendmail',
+  #   arguments: '-i'
+  # }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_options = {from: 'no-reply@bitip.in'}
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
