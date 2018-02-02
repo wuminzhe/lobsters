@@ -75,7 +75,8 @@ class ApplicationController < ActionController::Base
       Rails.logger.info "  User #{@user.id} (#{@user.username}) saw blue logo"
     end
     color = (blue ? "0000%02x" : "%02x0000")
-    @traffic_color = sprintf(color, intensity > 255 ? 255 : intensity)
+    @traffic_color = 'ffb800'
+    # @traffic_color = sprintf(color, intensity > 255 ? 255 : intensity)
 
     true
   end
